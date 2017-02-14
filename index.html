@@ -30,8 +30,10 @@
         }
         
         #section1 {
-            height: 580px;
+            min-height: 100%;
+            height: auto;
             background-color: beige;
+            overflow: auto;
         }
         
         #bAppointment {
@@ -39,7 +41,11 @@
             margin-right: 8px;
         }
         
-        @media screen and (max-width: 1000px) {
+        .clear {
+            clear: both;
+        }
+        /* No longer needed due to #Section 1 */
+        /*@media screen and (max-width: 1000px) {
             #section1 {
                 height: 620px;
             }
@@ -61,7 +67,7 @@
             #section1 {
                 height: 740px;
             }
-        }
+        }*/
     </style>
 </head>
 
@@ -98,46 +104,49 @@
                     <p>Morbi eu dui at libero pulvinar cursus a vitae velit. Donec nec massa aliquet mauris fermentum tincidunt vitae id dolor. Praesent pharetra enim eu lectus eleifend sagittis. Praesent eget orci in lorem elementum venenatis a scelerisque augue. Integer at eros varius, convallis quam eu, egestas nisi. </p>
                 </div>
             </div>
+            <div class="clear"></div>
+            <!--End of content container-->
         </div>
-        <div id="section2">
-            <div class="container">
-                <div class="jumbotron">
-                    <h1>About Us</h1>
-                    <p>Mauris eget tortor et metus interdum volutpat eu vel sapien</p>
+    </div>
+    <div id="section2">
+        <div class="container">
+            <div class="jumbotron">
+                <h1>About Us</h1>
+                <p>Mauris eget tortor et metus interdum volutpat eu vel sapien</p>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <h3>Column One</h3>
+                    <p>Mauris eget tortor et metus interdum volutpat eu vel sapien. Morbi non magna lacinia nisi dapibus pharetra. Vestibulum tincidunt ante vitae accumsan euismod. Maecenas suscipit orci in quam molestie, at faucibus mauris pulvinar. Nunc vulputate ex a velit accumsan vestibulum. Nam ornare sem ut lorem pellentesque elementum. </p>
+                    <p>Nullam dignissim eros vitae ultrices vestibulum. Praesent quis ligula eleifend nibh tempus vestibulum ornare ut sem. </p>
                 </div>
-                <div class="row">
-                    <div class="col-sm-4">
-                        <h3>Column One</h3>
-                        <p>Mauris eget tortor et metus interdum volutpat eu vel sapien. Morbi non magna lacinia nisi dapibus pharetra. Vestibulum tincidunt ante vitae accumsan euismod. Maecenas suscipit orci in quam molestie, at faucibus mauris pulvinar. Nunc vulputate ex a velit accumsan vestibulum. Nam ornare sem ut lorem pellentesque elementum. </p>
-                        <p>Nullam dignissim eros vitae ultrices vestibulum. Praesent quis ligula eleifend nibh tempus vestibulum ornare ut sem. </p>
-                    </div>
-                    <div class="col-sm-4">
-                        <h3>Column Two</h3>
-                        <p>Morbi eu dui at libero pulvinar cursus a vitae velit. Donec nec massa aliquet mauris fermentum tincidunt vitae id dolor. Praesent pharetra enim eu lectus eleifend sagittis. Praesent eget orci in lorem elementum venenatis a scelerisque augue. Integer at eros varius, convallis quam eu, egestas nisi. </p>
-                    </div>
-                    <div class="col-sm-4">
-                        <h3>Column Three</h3>
-                        <p>Mauris eget tortor et metus interdum volutpat eu vel sapien. Morbi non magna lacinia nisi dapibus pharetra. Vestibulum tincidunt ante vitae accumsan euismod. Maecenas suscipit orci in quam molestie, at faucibus mauris pulvinar. Nunc vulputate ex a velit accumsan vestibulum. Nam ornare sem ut lorem pellentesque elementum. </p>
-                        <p>Nullam dignissim eros vitae ultrices vestibulum. Praesent quis ligula eleifend nibh tempus vestibulum ornare ut sem. </p>
-                    </div>
+                <div class="col-sm-4">
+                    <h3>Column Two</h3>
+                    <p>Morbi eu dui at libero pulvinar cursus a vitae velit. Donec nec massa aliquet mauris fermentum tincidunt vitae id dolor. Praesent pharetra enim eu lectus eleifend sagittis. Praesent eget orci in lorem elementum venenatis a scelerisque augue. Integer at eros varius, convallis quam eu, egestas nisi. </p>
                 </div>
-                <div class="row">
-                    <div class="col-sm-4">
-                        <h3>Column One</h3>
-                        <p>Mauris eget tortor et metus interdum volutpat eu vel sapien. Morbi non magna lacinia nisi dapibus pharetra. Vestibulum tincidunt ante vitae accumsan euismod. Maecenas suscipit orci in quam molestie, at faucibus mauris pulvinar. Nunc vulputate ex a velit accumsan vestibulum. Nam ornare sem ut lorem pellentesque elementum. </p>
-                        <p>Nullam dignissim eros vitae ultrices vestibulum. Praesent quis ligula eleifend nibh tempus vestibulum ornare ut sem. </p>
-                    </div>
-                    <div class="col-sm-4">
-                        <h3>Column Two</h3>
-                        <p>Morbi eu dui at libero pulvinar cursus a vitae velit. Donec nec massa aliquet mauris fermentum tincidunt vitae id dolor. Praesent pharetra enim eu lectus eleifend sagittis. Praesent eget orci in lorem elementum venenatis a scelerisque augue. Integer at eros varius, convallis quam eu, egestas nisi. </p>
-                    </div>
-                    <div class="col-sm-4">
-                        <h3>Column Three</h3>
-                        <p>Mauris eget tortor et metus interdum volutpat eu vel sapien. Morbi non magna lacinia nisi dapibus pharetra. Vestibulum tincidunt ante vitae accumsan euismod. Maecenas suscipit orci in quam molestie, at faucibus mauris pulvinar. Nunc vulputate ex a velit accumsan vestibulum. Nam ornare sem ut lorem pellentesque elementum. </p>
-                        <p>Nullam dignissim eros vitae ultrices vestibulum. Praesent quis ligula eleifend nibh tempus vestibulum ornare ut sem. </p>
-                    </div>
+                <div class="col-sm-4">
+                    <h3>Column Three</h3>
+                    <p>Mauris eget tortor et metus interdum volutpat eu vel sapien. Morbi non magna lacinia nisi dapibus pharetra. Vestibulum tincidunt ante vitae accumsan euismod. Maecenas suscipit orci in quam molestie, at faucibus mauris pulvinar. Nunc vulputate ex a velit accumsan vestibulum. Nam ornare sem ut lorem pellentesque elementum. </p>
+                    <p>Nullam dignissim eros vitae ultrices vestibulum. Praesent quis ligula eleifend nibh tempus vestibulum ornare ut sem. </p>
                 </div>
             </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <h3>Column One</h3>
+                    <p>Mauris eget tortor et metus interdum volutpat eu vel sapien. Morbi non magna lacinia nisi dapibus pharetra. Vestibulum tincidunt ante vitae accumsan euismod. Maecenas suscipit orci in quam molestie, at faucibus mauris pulvinar. Nunc vulputate ex a velit accumsan vestibulum. Nam ornare sem ut lorem pellentesque elementum. </p>
+                    <p>Nullam dignissim eros vitae ultrices vestibulum. Praesent quis ligula eleifend nibh tempus vestibulum ornare ut sem. </p>
+                </div>
+                <div class="col-sm-4">
+                    <h3>Column Two</h3>
+                    <p>Morbi eu dui at libero pulvinar cursus a vitae velit. Donec nec massa aliquet mauris fermentum tincidunt vitae id dolor. Praesent pharetra enim eu lectus eleifend sagittis. Praesent eget orci in lorem elementum venenatis a scelerisque augue. Integer at eros varius, convallis quam eu, egestas nisi. </p>
+                </div>
+                <div class="col-sm-4">
+                    <h3>Column Three</h3>
+                    <p>Mauris eget tortor et metus interdum volutpat eu vel sapien. Morbi non magna lacinia nisi dapibus pharetra. Vestibulum tincidunt ante vitae accumsan euismod. Maecenas suscipit orci in quam molestie, at faucibus mauris pulvinar. Nunc vulputate ex a velit accumsan vestibulum. Nam ornare sem ut lorem pellentesque elementum. </p>
+                    <p>Nullam dignissim eros vitae ultrices vestibulum. Praesent quis ligula eleifend nibh tempus vestibulum ornare ut sem. </p>
+                </div>
+            </div>
+            <!--End of content container-->
         </div>
     </div>
 </body>
@@ -165,6 +174,9 @@
     $(document).on('click', '.navbar-collapse.in', function (e) {
         if ($(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle') {
             $(this).collapse('hide');
+        }
+        if (!$(e.target).is('a')) {
+            $('.collapse').collapse('hide');
         }
     });
 </script>
