@@ -11,15 +11,24 @@ $(document).ready(function () {
             // The optional number (700) specifies the number of milliseconds it takes to scroll to the specified area
             $('html, body').animate({
                 scrollTop: $(hash).offset().top
-            }, 700, function () {});
+            }, 700, function () {
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+            });
         } // End if
     });
 });
-$(document).click(function (e) {
+
+$(document).click(function(e) {
     if (!$(e.target).is('#myNavbar')) {
-        $('.collapse').collapse('hide');
+        $('.collapse').collapse('hide');        
     }
 });
+
+$(window).scroll(function(){
+       $('.collapse').collapse('hide');
+});
+	
 $(window).scroll(function () {
     $(".top").css("opacity", 1 - $(window).scrollTop() / 250);
 });
