@@ -34,12 +34,21 @@ html {
     clear: both;
 }
 
-#circle {
+#logo {
     margin-left: auto;
     margin-right: auto;
     background-color: lightgrey;
     width: 200px;
     height: 200px;
+    border-radius: 50%;
+}
+
+#profileImg {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: lightgrey;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
 }
 
@@ -56,6 +65,7 @@ html {
 #sectionHome {
     /* The image used */
     background-image: url("../IMG/background_hills.jpeg");
+    padding-top: 10%;
 }
 
 #sectionTeam {
@@ -63,26 +73,35 @@ html {
     background-image: url("../IMG/background_desk.jpeg");
 }
 
-#sectionHome,
-#sectionTeam {
-    padding-top: 80px;
-}
-
-#sectionHome h1,
-#sectionTeam h1 {
+#sectionHome h1 {
     margin-top: 20px;
     font-size: 60px;
 }
 
-#sectionHome p,
-#sectionTeam p {
+#sectionHome p {
     font-size: 40px;
 }
 
-#wrapper {
-    margin-top: 150px;
+.wrapper {
     padding-top: 100px;
     padding-bottom: 80px;
     background-color: aliceblue;
     background-color: rgba(240, 248, 255, 0.5);
+}
+
+#sectionTeam .wrapper {
+    height: 100%;
+    padding-top: 100px;
+    padding-bottom: 80px;
+    background-color: aliceblue;
+    background-color: rgba(240, 248, 255, 0.6);
+}
+
+#sectionTeam .row {
+    margin-top: 50px;
+}
+
+#sectionTeam .col-sm-6 {
+    padding-left: 10%;
+    padding-right: 10%;
 }
