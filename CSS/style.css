@@ -74,7 +74,11 @@ html {
 }
 
 #sectionPortfolio {
-    background-color: lightsteelblue
+    background-color: lightsteelblue;
+}
+
+#sectionContact {
+    background-color: lightyellow;
 }
 
 #sectionHome h1 {
