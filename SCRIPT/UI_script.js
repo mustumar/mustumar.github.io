@@ -18,36 +18,17 @@ $(document).ready(function () {
         } // End if
     });
 });
-<<<<<<< Updated upstream
-
-$(document).click(function(e) {
-=======
-<<<<<<< Updated upstream
-$(document).click(function (e) {
->>>>>>> Stashed changes
-    if (!$(e.target).is('#myNavbar')) {
-        $('.collapse').collapse('hide');        
-    }
-});
-<<<<<<< Updated upstream
-=======
-=======
 
 $(document).click(function(e) {
     if (!$(e.target).is('#myNavbar')) {
         $('.collapse').collapse('hide');        
     }
 });
->>>>>>> Stashed changes
 
 $(window).scroll(function(){
        $('.collapse').collapse('hide');
 });
 	
-<<<<<<< Updated upstream
-=======
->>>>>>> Stashed changes
->>>>>>> Stashed changes
 $(window).scroll(function () {
     $(".top").css("opacity", 1 - $(window).scrollTop() / 250);
 });
