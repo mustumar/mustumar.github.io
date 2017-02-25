@@ -21,9 +21,11 @@
                     <li><a href="#sectionTeam">The Team</a></li>
                     <li><a href="#sectionPortfolio">Portfolio</a></li>
                     <li><a href="#sectionPrice">Price Guide</a></li>
-                    <li><a id="navButton" href="#sectionContact">
-                        <button class="btn btn-success navbar-btn" id="bContact">Contact Us</button>
-                    </a></li>
+                    <li>
+                        <a id="navButton" href="#sectionContact">
+                            <button class="btn btn-success navbar-btn" id="bContact">Contact Us</button>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -78,12 +80,33 @@
     <div id="sectionContact" class="parallax">
         <div class="wrapper">
             <div class="container">
-                <div id="logo"></div>
-                <h1 class="text-center">Our Website Name</h1>
-                <p class="text-center">Web design for customers who demand perfection.</p>
+                <div id="contactWrapper" class="col-xl-6">
+                    <!-- Modal content-->
+                    <div class="modal-header">
+                        <h2 class="modal-title">Contact Us</h2> </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="usr">
+                                <h4>Name</h4></label>
+                            <input type="text" class="form-control" id="usr"> </div>
+                        <div class="form-group">
+                            <label for="usr">
+                                <h4>Email Address</h4></label>
+                            <input type="text" class="form-control" id="usr"> </div>
+                        <div class="form-group">
+                            <label for="comment">
+                                <h4>Message</h4></label>
+                            <textarea class="form-control" rows="5" id="comment"></textarea>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default">Send</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+    <div id="block"></div>
 </body>
 
 </html>

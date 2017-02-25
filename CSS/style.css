@@ -77,8 +77,18 @@ html {
     background-color: lightsteelblue;
 }
 
+#sectionPrice {
+    background-color: yellow;
+}
+
 #sectionContact {
     background-color: lightyellow;
+    position: fixed;
+    z-index: -1;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    height: 100%
 }
 
 #sectionHome h1 {
@@ -117,6 +127,20 @@ html {
     padding-left: 10%;
     padding-right: 10%;
 }
-#myNavbar #navButton{
+
+#myNavbar #navButton {
     padding: 0;
+}
+
+#block {
+    z-index: 0;
+}
+
+#contactWrapper {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#block {
+    height: 100%
 }
